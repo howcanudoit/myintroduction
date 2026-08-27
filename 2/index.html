@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>首页 · 我的个人主页</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ========== 顶部导航栏（全站统一） ========== -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">我的主页</a>
+      <!-- 汉堡菜单按钮：仅移动端显示 -->
+      <button class="nav-toggle" aria-label="打开菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html" class="active">
+          <span class="nav-item-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9v11h14V9"/></svg></span>
+          <span class="nav-item-text"><span class="nav-item-name">首页</span><span class="nav-item-sub">Home</span></span>
+        </a>
+        <a href="about.html">
+          <span class="nav-item-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg></span>
+          <span class="nav-item-text"><span class="nav-item-name">关于我</span><span class="nav-item-sub">About</span></span>
+        </a>
+        <a href="skills.html">
+          <span class="nav-item-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 0 5.7"/><path d="M12 2v4M8 3v3M4 6h6a4 4 0 0 1 0 8h-2v5"/><path d="M8 15v4"/><path d="M8 19H4"/><path d="M6 21l2-2 2 2"/></svg></span>
+          <span class="nav-item-text"><span class="nav-item-name">技能</span><span class="nav-item-sub">Skills</span></span>
+        </a>
+        <a href="experience.html">
+          <span class="nav-item-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-8"/><path d="M22 20H2"/></svg></span>
+          <span class="nav-item-text"><span class="nav-item-name">经历</span><span class="nav-item-sub">Experience</span></span>
+        </a>
+        <a href="contact.html">
+          <span class="nav-item-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <span class="nav-item-text"><span class="nav-item-name">联系我</span><span class="nav-item-sub">Contact</span></span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== 首屏展示区 ========== -->
+  <section class="hero">
+    <div class="container">
+      <img
+        class="avatar"
+        src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20portrait%20photo%20of%20a%20friendly%20young%20asian%20man%20smiling%2C%20soft%20studio%20lighting%2C%20clean%20background%2C%20high%20quality&image_size=square"
+        alt="我的头像"
+      />
+      <h1>你好，我是 <span class="accent">丘沛淇</span></h1>
+      <p class="subtitle">华南农业大学工程学院大一学生</p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn btn-primary">联系我</a>
+        <a href="about.html" class="btn btn-outline">了解更多</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 板块概览：点击卡片可进入对应子页面 ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">欢迎来到我的主页</h2>
+      <p class="section-text">点击下方卡片，快速了解我的方方面面。</p>
+      <div class="grid">
+        <a href="about.html" class="card fade-in">
+          <h3>关于我</h3>
+          <p>我的身份、背景与兴趣爱好</p>
+          <span class="card-more">了解更多 →</span>
+        </a>
+        <a href="skills.html" class="card fade-in">
+          <h3>我的技能</h3>
+          <p>掌握的技术栈与工具</p>
+          <span class="card-more">查看技能 →</span>
+        </a>
+        <a href="experience.html" class="card fade-in">
+          <h3>我的经历</h3>
+          <p>项目与职业生涯的时间线</p>
+          <span class="card-more">查看经历 →</span>
+        </a>
+        <a href="contact.html" class="card fade-in">
+          <h3>联系我</h3>
+          <p>邮箱、社交平台等联系方式</p>
+          <span class="card-more">联系方式 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer">
+    <p>© 2026 丘沛淇 · 用 ❤ 制作</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
